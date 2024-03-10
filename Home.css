@@ -1,0 +1,261 @@
+:root {
+  --accent-color:             #717171;
+  --white-color:              #fff;
+  --black-color:              #000;
+  --gray-color:               #F3F3F3;
+  --gray-color-300:           #D8D8D8;
+  --gray-color-500:           #AEAEAE;
+  --gray-color-800:           #3A3A3A;
+  --light-gray-color:         #D7DDDF;
+  --primary-color:            #72AEC8;
+  --bs-primary-rgb:           114,174,200;
+  --light-color:              #f8f9fa;
+  --dark-color:               #212529;
+  --light-blue-color:         #EDF1F3;
+  --navbar-color-color:       #131814;
+  --swiper-theme-color:       #4A4A4A;
+  --swiper-pagination-color:  #4A4A4A;
+
+}
+
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.pb-3, .py-3 {
+  padding-bottom: 0rem !important;
+}
+
+.pt-3, .py-3 {
+  padding-top: 0rem !important; 
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: rgba(55,55,55,0.8);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #ffffff;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+}
+
+.swiper-slide {
+  height: 100vh;
+}
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+
+body {
+  min-height: 110vh;
+  background-color: #4ca1af;
+  background-image: linear-gradient(135deg, #ff8c00 0%, #ffd500 100%);
+}
+
+/* 2. Billboard
+/*----------------------------------------------*/
+/*------------Swiper Arrow -----------*/
+#billboard .swiper-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+
+#banner-image{
+  padding-top: 20px;
+}
+.swiper-icon.swiper-arrow svg {
+  fill: var(--light-gray-color);
+}
+.swiper-icon.swiper-arrow:hover svg,
+.swiper-icon.swiper-arrow:focus svg {
+  fill: var(--primary-color);
+}
+#billboard .swiper-arrow.swiper-arrow-prev {
+  left: 0;
+}
+#billboard .swiper-arrow.swiper-arrow-next {
+  right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+#billboard .banner-content {
+    margin-top: 210px;
+}
+#billboard .image-holder {
+    margin-top: -390px;
+    opacity: 0.3;
+}
+#billboard .swiper-arrow {
+    top: 400px;
+}
+}
+
+
+
+/*** featurs Start ***/
+.featurs .featurs-item .featurs-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.featurs .featurs-item .featurs-icon::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: var(--bs-secondary);
+  position: absolute;
+  bottom: -10px;
+  transform: translate(-50%);
+  transform: rotate(45deg);
+  background: var(--bs-secondary);
+  
+}
+.container-fluid.featurs.py-5 {
+  background: white;
+}
+.bg-light {
+  background-color: #dddddd !important;
+}
+.bg-secondary {
+  background-color: #ffc107 !important;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+/*** featurs End ***/
+
+/* Special start*/
+#yearly-sale {
+  background: var(--light-blue-color);
+  height: 650px;
+}
+.mt-5, .my-5 {
+  margin-top: 0rem !important; 
+}
+.offset-4 {
+  margin-left: 20%;
+  margin-top: 170px;
+  /* display: flex; */
+}
+/*Special End*/
+
+/* Products start */
+
+
+.card-img-top{
+  margin-top: 25px;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+/* Products end */
+
+.logo-carousel-section {
+  background-color: #f5f5f5;
+}
+.logo-carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-logo-item {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.single-logo-item:hover {
+  opacity: 0.7;
+}
+
+.single-logo-item img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+/* 8. Footer
+/*----------------------------------------------*/
+/*------------ Social Icon -----------*/
+footer{
+  padding-top: 30px;
+  background-image: linear-gradient(135deg, #ff8c00 0%, #ffbb00 100%);
+  color: aliceblue;
+}
+a { color: inherit; } 
+
+a:hover { color: inherit; 
+opacity: 0.7;
+} 
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  color: #D7DDDF;;
+}
+.social-links svg:hover {
+  color: #72AEC8;
+}
+.social-links li {
+padding-right: 30px;
+} 
